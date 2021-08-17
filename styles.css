@@ -78,7 +78,7 @@ form {
 .footer {
   width: 100%;
   padding: 0.8em;
-  position: fixed;
+  position: absolute;
   bottom: 0;
   left: 0;
   text-align: center;
