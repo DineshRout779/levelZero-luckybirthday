@@ -1,2 +1,9 @@
 # levelZero-luckybirthday
-Fun app - check if your birthday is lucky?
+App that shows you if your birthday is lucky.
+
+Made using 
+  - HTML
+  - CSS
+  - JAVASCRIPT
+
+Live app:- [here](https://is-lucky-birthday.netlify.app/)
