@@ -22,14 +22,18 @@ btn.addEventListener('click', (e) => {
     dobString = Number(dobString.replaceAll('-', ''));
     luckyNum = Number(luckyNum);
 
-    if (dobString % luckyNum === 0) {
-      logo.style.display = 'none';
-      yayDiv.style.display = 'block';
-      sadDiv.style.display = 'none';
+    if (luckyNum > 0) {
+      if (dobString % luckyNum === 0) {
+        logo.style.display = 'none';
+        yayDiv.style.display = 'block';
+        sadDiv.style.display = 'none';
+      } else {
+        logo.style.display = 'none';
+        yayDiv.style.display = 'none';
+        sadDiv.style.display = 'block';
+      }
     } else {
-      logo.style.display = 'none';
-      yayDiv.style.display = 'none';
-      sadDiv.style.display = 'block';
+      numErrDiv.innerHTML = 'Please enter valid non-zero number';
     }
   } else if (dob.value !== '' && num.value == '') {
     dateErrDiv.innerHTML = '';
